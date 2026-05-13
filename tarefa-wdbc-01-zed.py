@@ -220,14 +220,14 @@ top_correlations.head(15)
 #
 
 # ## Parecer final — viabilidade e riscos éticos
-#
+
 # A base WDBC é estatisticamente útil para auditoria e estudo exploratório, mas exige cautela antes de uso em sistemas de triagem na rede pública:
-#
+
 # - **Viabilidade técnica:** há forte separação estatística em algumas variáveis, como `area_mean`, especialmente nos extremos.
 # - **Risco de viés amostral:** a base é histórica, limitada e pode não representar integralmente populações atendidas na rede pública brasileira.
 # - **Risco de redundância:** a multicolinearidade pode induzir modelos a sobrevalorizar atributos geométricos correlacionados.
 # - **Risco clínico:** outliers associados a malignidade devem apoiar triagem e priorização, não substituir avaliação médica.
 # - **Recomendação:** antes de uso operacional, realizar validação externa, análise de subgrupos, calibração clínica, documentação de limitações e governança algorítmica.
-#
+
 # **Conclusão:** o conjunto é adequado para fins educacionais, auditoria estatística e prototipação controlada. Para triagem pública real, ele não deve ser usado isoladamente sem validação clínica, avaliação de equidade e monitoramento contínuo.
-#
+
