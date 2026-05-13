@@ -18,7 +18,6 @@
 
 # In[1]:
 
-
 # Requisito I — Preparação do ambiente e ingestão da base
 
 import warnings
@@ -43,7 +42,6 @@ if data_path is None:
 
 print(f'Arquivo carregado: {data_path}')
 # In[2]:
-
 
 # Definição oficial das colunas do WDBC
 # Estrutura: ID, diagnóstico e 30 atributos numéricos derivados da imagem celular.
@@ -134,7 +132,6 @@ plt.show()
 
 # In[6]:
 
-
 # Requisito III — Isolamento robusto de anomalias por método não-paramétrico
 # Justificativa: como area_mean é assimétrica, usamos a regra do IQR, que não pressupõe normalidade.
 
@@ -160,9 +157,7 @@ print(outliers_area['diagnosis'].value_counts())
 
 outliers_area[['id', 'diagnosis', 'diagnosis_binary', 'area_mean']].sort_values('area_mean', ascending=False).head(10)
 
-
 # In[7]:
-
 
 # Visualização auxiliar dos outliers isolados por IQR
 
@@ -183,7 +178,6 @@ plt.show()
 
 # In[8]:
 
-
 # Requisito IV — Mapeamento de multicolinearidade
 
 corr_matrix = df[feature_columns].corr(method='pearson')
@@ -203,7 +197,6 @@ plt.show()
 
 
 # In[9]:
-
 
 # Pares mais correlacionados em valor absoluto, excluindo a diagonal
 
